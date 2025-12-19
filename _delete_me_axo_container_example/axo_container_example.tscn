@@ -1,0 +1,174 @@
+[gd_scene load_steps=6 format=3 uid="uid://cohk16bpn80gb"]
+
+[ext_resource type="Script" uid="uid://coivmcjy8ye5m" path="res://addons/axo_container/custom_class/axo_container.gd" id="1_stunr"]
+[ext_resource type="PackedScene" uid="uid://dsavbfw1wnsh3" path="res://_delete_me_axo_container_example/axo_container_example_item.tscn" id="2_elcbf"]
+
+[sub_resource type="Animation" id="Animation_u4kkw"]
+resource_name = "loop_demo"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/AxoContainer:primary_axis_spacing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1.103, -0.25, 0, 0.25, 0, 1.584, -0.4166667, 0, 0.4166667, 0, 1.103, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.5, 5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/AxoContainer:secondary_axis_spacing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1.223, -0.25, 0, 0.25, 0, 1.76, -0.4166667, 0, 0.4166667, 0, 1.223, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.5, 5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/AxoContainer:primary_axis_angle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(-200, -0.25, 0, 0.25, 0, -210.435, -0.4166667, 0, 0.4166667, 0, -200, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.5, 5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/AxoContainer:secondary_axis_angle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(25, -0.25, 0, 0.25, 0, 108.478, -0.4166667, 0, 0.4166667, 0, 25, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.5, 5)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/AxoContainer:child_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0.25, 0, 1.489, -0.4166667, 0, 0.4166667, 0, 0.5, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.5, 5)
+}
+
+[sub_resource type="Animation" id="Animation_5q0os"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/AxoContainer:primary_axis_spacing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.103, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/AxoContainer:secondary_axis_spacing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.223, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/AxoContainer:primary_axis_angle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-200, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/AxoContainer:secondary_axis_angle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(25, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/AxoContainer:child_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_exuo2"]
+_data = {
+&"RESET": SubResource("Animation_5q0os"),
+&"loop_demo": SubResource("Animation_u4kkw")
+}
+
+[node name="AxoContainerExample" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AxoContainer" type="Container" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(3, 3)
+script = ExtResource("1_stunr")
+primary_axis_spacing = 1.103
+secondary_axis_spacing = 1.223
+metadata/_custom_type_script = "uid://coivmcjy8ye5m"
+
+[node name="Item1" parent="CanvasLayer/AxoContainer" instance=ExtResource("2_elcbf")]
+modulate = Color(0.85174555, 0.4961667, 0.7447791, 1)
+layout_mode = 2
+
+[node name="Item2" parent="CanvasLayer/AxoContainer" instance=ExtResource("2_elcbf")]
+modulate = Color(0, 0.41804782, 0.75841445, 1)
+layout_mode = 2
+
+[node name="Item3" parent="CanvasLayer/AxoContainer" instance=ExtResource("2_elcbf")]
+modulate = Color(0.13567725, 0.42957368, 1.347661e-06, 1)
+layout_mode = 2
+
+[node name="Item4" parent="CanvasLayer/AxoContainer" instance=ExtResource("2_elcbf")]
+modulate = Color(1, 1, 0, 1)
+layout_mode = 2
+
+[node name="Item5" parent="CanvasLayer/AxoContainer" instance=ExtResource("2_elcbf")]
+modulate = Color(0, 0.70167106, 0.7899005, 1)
+layout_mode = 2
+
+[node name="Item6" parent="CanvasLayer/AxoContainer" instance=ExtResource("2_elcbf")]
+modulate = Color(0.7254902, 0, 0, 1)
+layout_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_exuo2")
+}
+autoplay = "loop_demo"
